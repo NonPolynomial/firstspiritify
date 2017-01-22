@@ -1,0 +1,15 @@
+{
+    "name": "firstspiritify",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Sascha \"NonPolynomial\" Metz",
+    "license": "MIT",
+    "dependencies": {
+        "mkdirp": "^0.5.1",
+        "yargs": "^6.6.0"
+    },
+    "preferGlobal": true,
+    "bin": {
+        "firstspiritify": "bin/firstspiritify.js"
+    }
+}

@@ -1,0 +1,89 @@
+{
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "env": {
+        "node": true
+    },
+    "globals": {
+        "Promise": false
+    },
+    "rules": {
+        "valid-jsdoc": [
+            "warn",
+            {
+                "preferType": {
+                    "object": "Object",
+                    "array": "Array",
+                    "number": "Number",
+                    "String": "string",
+                    "Boolean": "boolean",
+                    "function": "Function"
+                },
+                "requireReturn": false,
+                "requireParamDescription": false,
+                "requireReturnDescription": false
+            }
+        ],
+        "curly": ["error", "all"],
+        "default-case": "warn",
+        "dot-location": ["error", "property"],
+        "dot-notation": "warn",
+        "eqeqeq": ["error", "always"],
+        "no-console": "warn",
+        "no-else-return": "error",
+        "no-fallthrough": [
+            "warn"
+        ],
+        "no-new-wrappers": "error",
+        "no-new": "error",
+        "no-with": "error",
+        "wrap-iife": [
+            "error",
+            "inside",
+            {
+                "functionPrototypeMethods": true
+            }
+        ],
+        "yoda": ["off", "always"],
+
+        "no-unused-vars": "warn",
+        "no-use-before-define": "error",
+
+        "no-new-require": "error",
+
+        "brace-style": ["warn", "1tbs"],
+        "camelcase": "warn",
+        "indent": "warn",
+        "new-parens": "error",
+        "no-mixed-spaces-and-tabs": "error",
+        "no-new-object": "error",
+        "no-restricted-syntax": [
+            "error",
+            "FunctionDeclaration",
+            "ClassBody",
+            "ClassDeclaration",
+            "ClassExpression"
+        ],
+        "no-tabs": "error",
+        "no-underscore-dangle": "error",
+        "quotes": [
+            "error",
+            "single",
+            {
+                "allowTemplateLiterals": true
+            }
+        ],
+        "quote-props": ["error", "as-needed"],
+        "semi": ["error", "always"],
+
+        "arrow-parens": ["error", "always"],
+        "no-useless-computed-key": "warn",
+        "no-var": "error",
+        "prefer-const": "error",
+        "prefer-rest-params": "error",
+        "prefer-template": "off"
+    }
+}
